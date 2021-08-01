@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive nav2</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+        .menu{
+            background-color: purple;
+            display: flex;
+            justify-content:flex-end;
+            
+            
+            
+        }
+        .menu a{
+            text-decoration: none;
+            font-size: 25px;
+            padding: 15px;
+            color: whitesmoke;
+        }
+        .menu a:hover{
+            background-color:teal;
+            color: black;
+            border-radius: 5px;
+        }
+
+
+        @media screen and (max-width:600px){
+            .menu{
+                flex-direction: column;
+                text-align: center;
+                background-color: darkkhaki;
+                
+            }
+            .menu a{
+                color: black;
+                background-color: brown;
+                margin: 5px;
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Tuitorial</a>
+        <a href="#">About Me</a>
+        <a href="#">Blog</a>
+    </div>
+</body>
+</html>
